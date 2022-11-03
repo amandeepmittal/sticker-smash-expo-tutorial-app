@@ -95,7 +95,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   optionsContainer: {
-    flex: 1 / 4,
+    position: "absolute",
+    bottom: 80,
   },
   optionsRow: {
     alignItems: "center",
