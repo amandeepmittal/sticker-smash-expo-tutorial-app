@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { StyleSheet, FlatList, Image, Platform, Pressable } from "react-native";
 
-export default function EmojiList({ onSelect }) {
+export default function EmojiList({ onSelect, onCloseModal }) {
   const [emoji] = useState([
     require("../assets/images/emoji1.png"),
     require("../assets/images/emoji2.png"),
@@ -22,6 +22,7 @@ export default function EmojiList({ onSelect }) {
           <Pressable
             onPress={() => {
               onSelect(item);
+              onCloseModal();
             }}
           >
             <Image source={item} key={index} style={styles.image} />
