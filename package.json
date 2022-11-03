@@ -15,7 +15,8 @@
     "react-native": "0.70.4",
     "react-dom": "18.0.0",
     "react-native-web": "~0.18.9",
-    "@expo/webpack-config": "^0.17.2"
+    "@expo/webpack-config": "^0.17.2",
+    "@expo/vector-icons": "^13.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
