@@ -72,21 +72,19 @@ export default function App() {
         console.log(e);
       }
     } else {
-      domtoimage
-        .toJpeg(imageRef.current, {
+      try {
+        const dataUrl = await domtoimage.toJpeg(imageRef.current, {
           quality: 0.95,
           width: 320,
           height: 440,
-        })
-        .then((dataUrl) => {
-          let link = document.createElement("a");
-          link.download = "sticker-smash.jpeg";
-          link.href = dataUrl;
-          link.click();
-        })
-        .catch((e) => {
-          console.log(e);
         });
+        let link = document.createElement("a");
+        link.download = "sticker-smash.jpeg";
+        link.href = dataUrl;
+        link.click();
+      } catch (e) {
+        console.log(e);
+      }
     }
   };
 
