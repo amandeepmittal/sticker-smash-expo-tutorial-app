@@ -9,7 +9,9 @@
     },
     "apple-sim": {
       "extends": "development",
-      "simulator": true
+      "ios": {
+        "simulator": true
+      }
     },
     "preview": {
       "distribution": "internal"
