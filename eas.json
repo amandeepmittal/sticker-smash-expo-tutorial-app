@@ -7,6 +7,10 @@
       "developmentClient": true,
       "distribution": "internal"
     },
+    "apple-sim": {
+      "extends": "development",
+      "simulator": true
+    },
     "preview": {
       "distribution": "internal"
     },
