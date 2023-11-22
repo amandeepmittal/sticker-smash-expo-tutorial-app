@@ -26,6 +26,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0d3e5d66-334f-46a3-83d1-8898ca21505e"
+      }
+    },
+    "owner": "amanhimself"
   }
 }
