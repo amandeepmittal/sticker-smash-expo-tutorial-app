@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { StyleSheet, FlatList, Image, Platform, Pressable } from "react-native";
+import { StyleSheet, FlatList, Platform, Pressable } from "react-native";
+import { Image } from "expo-image";
 
 export default function EmojiList({ onSelect, onCloseModal }) {
   const [emoji] = useState([
